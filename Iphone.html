@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/cs2?family=Jockey+one&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.css" />
+</head>
+<body>
+    <div class="product-detail">
+        <section>
+            <h1> Iphone Phone case
+            </h1>
+            <div class="photo-gallery">
+                <div style="background-image: url(images/iphone-case-iphone-7-8-case-on-phone-6061fc648adc8.png);" class="primary-photo"></div>
+                <img src="images/iphone-case-iphone-7-8-case-on-phone-606b49bfc16eb.png">
+                <img src="images/iphone-case-iphone-7-8-case-with-phone-606b49bfc1744.png">
+                <img src="images/iphone-case-iphone-7-8-lifestyle-1-606b49bfc163e.png">
+                <img src="images/iphone-case-iphone-7-8-lifestyle-2-606b49bfc1793.png">
+                
+            </div>
+            </section>
+            <section>Free Shipping
+                <h2>
+                    $20
+                </h2>
+                <p>
+                    Made in the USA
+                </p>
+                <form>
+                    <label>
+                        <input type="radio" name="size"
+                        value="small">
+                        Iphone 8
+                    </label>
+                    <label>
+                        <input type="radio" name="size"
+                        value="medium">
+                        Iphone 7
+                    </label>
+                    <label>
+                        <input type="radio" name="size"
+                        value="large">
+                        Iphone 8 +
+                    </label>
+                </form>
+                <a class="button snipcart-add-item" 
+                   href="#"
+                    data-item-id="Mam custom watch"
+                  data-item-price="1500"
+                  data-item-url="/paintings/starry-night"
+                  data-item-description="A hand crafted watch with a 5 year battery"
+                   data-item-custom1-name="Size"
+                   data-item-custom1-options="Small|Medium|Large"
+                  data-item-image="/assets/images/starry-night.jpg"
+                  data-item-name="Mam custom made watch"
+                   >
+                    Add too Cart
+                </a>
+            </section>
+    
+        </div>
+        <script type="text/javascript">
+            $( ".photo-gallery > img" ).click(function() {
+            var imgSrc= $(this).attr("src");
+            $('.primary-photo').attr('style',"background-image: url("+imgSrc+");");
+            });$( ".product-details form input" ).change(function() {
+                var productSize= $(this).val();
+                $('.snipcart-add-item').attr('data-item-custom1-value',productSize);
+            });
+
+        </script>
+    <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
+        <div id="snipcart" data-config-modal-style="side" data-api-key="MTFkNjg0NmQtMzMwNy00NzA2LTliM2YtYjc1NDE5NjkwZmY3NjM3NDgzOTY2MzMxNDU1MTcy" hidden></div>
+    </body>
+</html>
+            
