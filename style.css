@@ -86,20 +86,20 @@ ul.product-grid > {
     list-style-type: none;
     background: black;
 }
-ul.prodcut-grid > li > span {
+ul.prodcut-grid > li > a > span {
     text-align: center;
 }
-ul.product-grid > li > hgroup {
+ul.product-grid > li > a > hgroup {
     
 }
-ul.product-grid > li > hgroup > img {
+ul.product-grid > li > a > hgroup > img {
 height: 300px;
 width: 300px;
 }
-.product-grid > li > hgroup >h3{
+.product-grid > li > a > hgroup >h3{
    text-align: center; 
 }
-.product-grid > li > hgroup >h4{
+.product-grid > li >  a > hgroup >h4{
     
 }
 
